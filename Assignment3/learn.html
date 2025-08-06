@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learn More - Life Rhythm Detector</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fff;
+      font-family: 'SF Pro', 'San Francisco', Arial, sans-serif;
+      color: #1C1C1E;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .lr-learn-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(28,28,30,0.07);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+    }
+    .lr-learn-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+    .lr-learn-back {
+      background: #F2F2F7;
+      color: #007AFF;
+      border: none;
+      border-radius: 18px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.7rem 1.3rem;
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+    .lr-learn-back:hover {
+      background: #e5e5ea;
+    }
+    .lr-learn-content {
+      margin-top: 4.2rem;
+      padding: 2rem 0.5rem 2.5rem 0.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .lr-learn-section {
+      background: #F2F2F7;
+      border-radius: 22px;
+      box-shadow: 0 2px 12px rgba(28,28,30,0.07);
+      margin-bottom: 2.2rem;
+      padding: 2rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s cubic-bezier(.6,.2,.2,1), transform 0.7s cubic-bezier(.6,.2,.2,1);
+    }
+    .lr-learn-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .lr-learn-img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 18px;
+      margin: 1.2rem auto;
+      display: block;
+      box-shadow: 0 2px 12px rgba(28,28,30,0.07);
+    }
+    .lr-learn-section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+      color: #007AFF;
+    }
+    .lr-learn-section-text {
+      font-size: 1.09rem;
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+    .lr-learn-section-date {
+      font-size: 0.98rem;
+      color: #8e8e93;
+      margin-bottom: 0.7rem;
+      font-weight: 500;
+    }
+    @media (max-width: 600px) {
+      .lr-learn-header { padding: 0.7rem 0.5rem; }
+      .lr-learn-title { font-size: 1.1rem; }
+      .lr-learn-content { padding: 1rem 0.1rem 1.5rem 0.1rem; }
+      .lr-learn-section { padding: 1.1rem 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="lr-learn-header">
+    <button class="lr-learn-back" onclick="window.location.href='index.html'">&larr; Return</button>
+    <div class="lr-learn-title">Updates announcement</div>
+    <div style="width:48px"></div>
+  </header>
+  <main class="lr-learn-content">
+    <section class="lr-learn-section" id="lr-learn-1">
+      <div class="lr-learn-section-date">March 2090</div>
+      <div class="lr-learn-section-title">Life Rhythm Detector 1.0 Released！！</div>
+      <div class="lr-learn-section-text">
+       On March 12, 2090, the China Region invented an implantable chip that can measure physiological and emotional changes of all users. It was named "Life Rhythm Detector". The specific method is to monitor various aspects of the body and generate reports at any time. The reports will be displayed next to the user in the form of a holographic screen. This is a technology officially developed and promoted by the government department of the China Region. After this technology showed its high development and publicity advantages, various regions paid attention to it and quickly reached a cooperation agreement.
+      </div>
+    </section>
+    <section class="lr-learn-section" id="lr-learn-2">
+      <div class="lr-learn-section-date">June 2090</div>
+      <div class="lr-learn-section-title">Life Rhythm Detector 1.0 International Rollout Announcement</div>
+      <div class="lr-learn-section-text">
+        On June 8, 2090, the agreement states that the Chinese region will open the use of this technology to the world, and each region will make the data obtained through this technology available to every citizen. To demonstrate its determination, the "Government of All Regions" has issued a policy to support all citizens around the world to implant chips to support national disease control and strengthen the medical system and provide financial subsidies. When people can clearly understand their own physical condition, the mortality rate of various diseases will be significantly reduced.
+      </div>
+    </section>
+    <section class="lr-learn-section" id="lr-learn-3">
+      <div class="lr-learn-section-date">January 2091</div>
+      <div class="lr-learn-section-title">We heard your voices，please trust us！</div>
+      <div class="lr-learn-section-text">
+        At the beginning of January 2091, at the release of this technology, protests advocating human rights broke out all over the world, including but not limited to marches, strikes, speeches, etc. It is understood that their main demands are to ask the government to revoke the newly released policy and refuse to accept the implantation of chips. Among them, the resistance in the United States is the most radical. The leader of the protesters stood outside the White House and gave a speech surrounded by many supporters. She believed that the release of this policy was an infringement on the body of the people. She called on people to refuse to implant chips in their bodies and tried to increase people's concerns about the possible side effects of this technology.
+      </div>
+    </section>
+    <section class="lr-learn-section" id="lr-learn-4">
+      <div class="lr-learn-section-date">March 2091</div>
+      <div class="lr-learn-section-title">Response For The Recent Protests</div>
+      <div class="lr-learn-section-text">
+        On March 20, 2091, the rumors are increasing, forcing the government to make a statement. The government's attitude is also very clear. The "Life Rhythm" chip is safe, and there is absolutely no conspiracy behind it. To prove this, the leaders and senior personnel of each region will take the lead, publicly broadcast the chip implantation surgery, and increase the compensation. At the same time, an announcement was made to increase the subsidy amount. All citizens will receive medical assistance after the surgery, and recipients can access ultra-low-cost AI treatment at the nearest government-funded medical center at any time. Experts have analyzed that this project has reduced the city's medical burden. By eliminating waiting times for medical consultations and the time required to target symptoms, it has streamlined the medical process and will significantly increase the efficiency of the medical system. This will allow doctors to devote more time to treating difficult and complex diseases that AI cannot treat, freeing them up to save more lives.
+      </div>
+    </section>
+    <section class="lr-learn-section" id="lr-learn-5">
+      <div class="lr-learn-section-date">October 2095</div>
+      <div class="lr-learn-section-title">Thanks For Your Acceptance！</div>
+      <div class="lr-learn-section-text">
+        By October 1, 2095, the popularization of Life Rhythm Chip was back on track. A few years later, Life Rhythm Chip has been thoroughly popularized, and people have personally felt the convenience brought by this technology. They have gradually become accustomed to its existence, and the voices of protest have completely disappeared. The resistance was just a minor episode in the era. With the joint efforts of all regions around the world, the number of people implanted with chips has rapidly increased from less than 30% to 80%.
+      </div>
+    </section>
+    <section class="lr-learn-section" id="lr-learn-5">
+      <div class="lr-learn-section-date">January 2096</div>
+      <div class="lr-learn-section-title">Life Rhythm Detector 2.0 Released</div>
+      <div class="lr-learn-section-text">
+        Humanity is progressing toward a healthier future. Today, chips are a part of every life. Whenever a health risk arises, the Life Rhythm Chip instantly alerts and provides advice. People no longer need to worry about illness, and their approach to health management has shifted from passive to active. Past controversies are now a thing of the past, unimaginable to the next generation.
+      </div>
+    </section>
+  </main>
+  <audio id="lr-learn-audio" src="sounds/ambient.mp3" loop></audio>
+  <script>
+    // Scroll-triggered fade/slide animations
+    function revealSections() {
+      document.querySelectorAll('.lr-learn-section').forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) sec.classList.add('visible');
+      });
+    }
+    window.addEventListener('scroll', revealSections);
+    window.addEventListener('DOMContentLoaded', revealSections);
+
+    // Ambient audio on scroll or click
+    let audioStarted = false;
+    function startAudio() {
+      if (!audioStarted) {
+        const audio = document.getElementById('lr-learn-audio');
+        audio.volume = 0.18;
+        audio.play();
+        audioStarted = true;
+      }
+    }
+    window.addEventListener('scroll', startAudio, { once: true });
+    window.addEventListener('click', startAudio, { once: true });
+  </script>
+</body>
+</html>
